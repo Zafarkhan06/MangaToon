@@ -1,0 +1,64 @@
+{
+    "slides": [
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "First slide label",
+        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "rating" : "9.6",
+        "type" : "Manhwa",
+        "genre" : "action, funny , adventure",
+        "status" : "Ongoing"
+      },
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "First slide label",
+        "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+        "rating": "9.6",
+        "type": "Manhwa",
+        "genre": "action, funny, adventure",
+        "status": "Ongoing"
+      },
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "Second slide label",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "rating": "8.5",
+        "type": "Manga",
+        "genre": "drama, romance",
+        "status": "Completed"
+      },
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "Third slide label",
+        "description": "Pellentesque euismod magna rutrum dolor convallis finibus.",
+        "rating": "7.9",
+        "type": "Manhwa",
+        "genre": "fantasy, supernatural",
+        "status": "Ongoing"
+      },
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "Fourth slide label",
+        "description": "Vestibulum vel velit at neque commodo auctor non a nisi.",
+        "rating": "8.0",
+        "type": "Manhua",
+        "genre": "mystery, thriller",
+        "status": "Ongoing"
+      },
+      {
+        "src": "/images/666mangaPoster.webp",
+        "alt": "Image 1 for carousel",
+        "title": "Fifth slide label",
+        "description": "Donec nec justo id libero ultricies vulputate.",
+        "rating": "9.2",
+        "type": "Manhwa",
+        "genre": "horror, psychological",
+        "status": "Completed"
+      }
+    ]
+  }
