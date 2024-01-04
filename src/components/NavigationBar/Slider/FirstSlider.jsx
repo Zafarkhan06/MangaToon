@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 
 function FirstSlider({ slides }) {
   return (
-    <Carousel  data-bs-theme="dark" className="w-3/6 h-80 "
+    <Carousel  data-bs-theme="dark" className="w-full h-80 "
     controls={false}
     interval={1000} >
       {slides.map((slide, index) => (

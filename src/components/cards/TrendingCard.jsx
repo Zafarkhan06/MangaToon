@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 export default function TrendingCard() {
   return (
-    <div className="w-1/4 h-80">
+    <div className="w-96 h-80">
       <Card className=" text-white bg-dark">
         <Card.Img
           className="h-80  object-center opacity-45 object-cover"

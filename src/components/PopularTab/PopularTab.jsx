@@ -6,6 +6,87 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import SmallTrendingCard from "../cards/SmallTrendingCard";
+
+const WeeklydummyData = [
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 1",
+    genre: "Action, Adventure",
+    rating: 4.5,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 2",
+    genre: "Drama, Romance",
+    rating: 3.8,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 3",
+    genre: "Sci-Fi, Thriller",
+    rating: 4.0,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 4",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+];
+
+const MonthlydummyData = [
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 5",
+    genre: "Action, Adventure",
+    rating: 4.5,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 6",
+    genre: "Drama, Romance",
+    rating: 3.8,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 7",
+    genre: "Sci-Fi, Thriller",
+    rating: 4.0,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+];
+
+const AlldummyData = [
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 5",
+    genre: "Action, Adventure",
+    rating: 4.5,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 6",
+    genre: "Drama, Romance",
+    rating: 3.8,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 7",
+    genre: "Sci-Fi, Thriller",
+    rating: 4.0,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+];
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -46,6 +127,10 @@ export default function PopularTab() {
     setValue(newValue);
   };
 
+  const sortDataByRating = (data) => {
+    return data.sort((a, b) => b.rating - a.rating);
+  };
+
   return (
     <Box sx={{ bgcolor: "#222222", width: 370, borderRadius: 2 }}>
       <AppBar position="static">
@@ -65,13 +150,54 @@ export default function PopularTab() {
       </AppBar>
       <div>
         <TabPanel value={value} index={0}>
-          <SmallTrendingCard />
+          {sortDataByRating(WeeklydummyData).map((data, index) => (
+            <div key={index}>
+              <SmallTrendingCard
+                src={data.src}
+                title={data.title}
+                genre={data.genre}
+                rating={data.rating}
+              />
+              {index !== WeeklydummyData.length - 1 && (
+                <hr className="text-white" />
+              )}
+            </div>
+          ))}
         </TabPanel>
+      </div>
+
+      <div>
         <TabPanel value={value} index={1}>
-          Item Two
+          {sortDataByRating(MonthlydummyData).map((data, index) => (
+            <div key={index}>
+              <SmallTrendingCard
+                src={data.src}
+                title={data.title}
+                genre={data.genre}
+                rating={data.rating}
+              />
+              {index !== WeeklydummyData.length - 1 && (
+                <hr className="text-white" />
+              )}
+            </div>
+          ))}
         </TabPanel>
+      </div>
+      <div>
         <TabPanel value={value} index={2}>
-          Item Three
+          {sortDataByRating(AlldummyData).map((data, index) => (
+            <div key={index}>
+              <SmallTrendingCard
+                src={data.src}
+                title={data.title}
+                genre={data.genre}
+                rating={data.rating}
+              />
+              {index !== WeeklydummyData.length - 1 && (
+                <hr className="text-white" />
+              )}
+            </div>
+          ))}
         </TabPanel>
       </div>
     </Box>
