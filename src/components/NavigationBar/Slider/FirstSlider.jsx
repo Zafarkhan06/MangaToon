@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 
 function FirstSlider({ slides }) {
   return (
-    <Carousel  data-bs-theme="dark" className="w-3/6  "
+    <Carousel  data-bs-theme="dark" className="w-3/6 h-80 "
     controls={false}
     interval={1000} >
       {slides.map((slide, index) => (
@@ -20,7 +20,7 @@ function FirstSlider({ slides }) {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <Container className="bg-opacity-60 h-72 rounded-lg bg-slate-900 ">
+            <Container className="bg-opacity-60 h-80 rounded-lg bg-slate-900 ">
               <Row className="px-4 py-8">
                 <Col sm={8}>
                   <Row className="flex items-center mb-0">
