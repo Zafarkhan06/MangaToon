@@ -2,14 +2,14 @@ import SearchIcon from "@mui/icons-material/Search";
 import IconButton from "@mui/material/IconButton";
 export default function NavigationBar() {
   return (
-    <section>
-      <div className="bg-[#0b0a0d] py-2 px-20 flex justify-between items-center">
+    <section className="bg-[#0b0a0d]">
+      <div className=" container py-2 flex justify-between items-center">
         <img
           src="/images/logo-mangatoon.png"
           alt="MangaToon Logo"
           className="w-11 h-11"
         />
-        <div className="flex items-center justify-between w-2/6 relative">
+        <div className="flex items-center justify-end w-2/6 relative ">
           <input
             type="text"
             placeholder="Search"

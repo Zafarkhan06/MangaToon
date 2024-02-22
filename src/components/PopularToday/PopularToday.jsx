@@ -1,4 +1,6 @@
 import PopularTodayCard from "../cards/PopularTodayCard";
+import { useMediaQuery } from '@mui/material';
+
 const PopularTodayData = [
   {
     src: "/images/666MangaPoster.webp",
@@ -18,21 +20,30 @@ const PopularTodayData = [
     chapter: "Chapter 137",
     rating: 4.0,
   },
-  
   {
     src: "/images/666MangaPoster.webp",
     title: "Title 8",
     chapter: "Chapter 14",
     rating: 4.2,
   },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 9",
+    chapter: "Chapter 45",
+    rating: 4.7,
+  },
 ];
+
 export default function PopulartToday(props) {
+  const matches = useMediaQuery('(max-width:960px)'); // Check if screen size is medium or smaller
+
   return (
     <section className="bg-[#222222] text-white rounded-lg pb-2">
       <p className="pt-3 pl-5 font-bold text-2xl ">Popular</p>
       <hr className="text-white" />
       <div className="pt-2 px-4 flex justify-evenly gap-5">
-        {PopularTodayData.map((data, index) => (
+        {/* Map only the first two cards if screen size is md or sm */}
+        {PopularTodayData.slice(0, matches ? 3 : PopularTodayData.length).map((data, index) => (
           <div key={index}>
             <PopularTodayCard
               src={data.src}

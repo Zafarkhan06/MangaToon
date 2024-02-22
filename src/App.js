@@ -2,7 +2,7 @@ import "./index.css";
 import Home from "./HomePage/Home";
 function App() {
   return (
-    <section>
+    <section >
       <Home />
     </section>
   );

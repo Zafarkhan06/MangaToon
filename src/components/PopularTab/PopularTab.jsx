@@ -59,6 +59,43 @@ const MonthlydummyData = [
     genre: "Comedy",
     rating: 4.2,
   },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  {
+    src: "/images/666MangaPoster.webp",
+    title: "Title 8",
+    genre: "Comedy",
+    rating: 4.2,
+  },
+  
 ];
 
 const AlldummyData = [
@@ -132,7 +169,7 @@ export default function PopularTab() {
   };
 
   return (
-    <Box sx={{ bgcolor: "#222222", width: 370, borderRadius: 2 }}>
+    <Box sx={{ bgcolor: "#222222", width: 370, borderRadius: 2,}}>
       <AppBar position="static">
         <Tabs
           className="bg-[#333333]"
