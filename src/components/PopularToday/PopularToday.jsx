@@ -26,22 +26,17 @@ const PopularTodayData = [
     chapter: "Chapter 14",
     rating: 4.2,
   },
-  {
-    src: "/images/666MangaPoster.webp",
-    title: "Title 9",
-    chapter: "Chapter 45",
-    rating: 4.7,
-  },
+ 
 ];
 
 export default function PopulartToday(props) {
   const matches = useMediaQuery('(max-width:960px)'); // Check if screen size is medium or smaller
 
   return (
-    <section className="bg-[#222222] text-white rounded-lg pb-2">
+    <section className="bg-[#222222] container text-white rounded-lg pb-2">
       <p className="pt-3 pl-5 font-bold text-2xl ">Popular</p>
       <hr className="text-white" />
-      <div className="pt-2 px-4 flex justify-evenly gap-5">
+      <div className="pt-2 px-4 flex container justify-between gap-2">
         {/* Map only the first two cards if screen size is md or sm */}
         {PopularTodayData.slice(0, matches ? 3 : PopularTodayData.length).map((data, index) => (
           <div key={index}>

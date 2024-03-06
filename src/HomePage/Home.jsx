@@ -11,7 +11,7 @@ export default function Home() {
       
         <NavigationBar />
         <div className="container justify-center flex flex-col xl:flex-row items-top gap-3 ">
-          <div className="flex flex-col">
+          <div className="flex flex-col xl:w-4/6">
             <div className="flex gap-3">
               <FirstSlider slides={slidesData.slides} />
               <TrendingCard />
@@ -24,7 +24,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="px-3 py-4 flex flex-col max-h-[120rem]  justify-start rounded-lg bg-black items-start">
+          <div className="px-3 py-4 flex flex-col max-h-[120rem] md:w-1/6 xl:w-2/6 justify-start rounded-lg bg-black items-start">
             <p className="text-white font-semibold text-xl">Popular</p>
             <PopularTab />
           </div>
